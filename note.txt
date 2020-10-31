@@ -1,0 +1,35 @@
+js
+
+prereqisites
+   html
+   css
+   bootstrap
+
+   how web works
+   html = content =
+   css  = style   =
+   js/jq= behave
+
+   what is js and jq
+
+   js = javascript is a scripting language that is
+
+        lightweight
+        functional
+        object-oriented
+        scripting language
+    jq= library
+    js how
+
+    external js= script.js
+    before last body tag
+    into head
+    beside content
+         <secript></secript>
+
+
+    syntax: rule to write a meaningful code. predefine rules.
+
+    event
+
+    function

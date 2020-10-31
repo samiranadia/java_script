@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+
+    <title>js/jq</title>
+  </head>
+  <body>
+<!--on click -->     
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1> 1. Click the button to change the text</h1>
+          <button type="button" onclick="textChange()" class="btn btn-danger btn-block btn-lg">Click me</button>
+
+           <h2 id="h2">Lorem ipsum, dolor sit amet</h2>
+
+        </div>
+      </div>
+    </div>
+<!--on Double click -->    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="event">
+            <h1> 2. Double click the button to display the time</h1>
+
+            <button type="button" ondblclick="displayDate()" class="btn btn-primary btn-block btn-lg">The time is?</button>
+            <p id="p"></p>
+            </div>
+        </div>
+      </div>
+    </div>
+<!--on change -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="change">
+            <h1> 3. This example uses the HTML DOM to assign an "onchange" event to an input element.</h1>
+
+            Enter your name: <input type="text" id="fname">
+
+            <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+            </div>
+        </div>
+      </div>
+    </div>
+<!--on mouse over -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="over">
+            <h1> 4. Move your mouse over the button</h1>
+
+            <button type="button" onmouseover="displayChange()" class="btn btn-success btn-block btn-lg">mouse over</button>
+            <h3 id='demo'>Developer name</h3>
+            </div>
+        </div>
+      </div>
+    </div>
+<!--on mouse away -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="move">
+          <h1> 5. Move your mouse away from the button</h1>
+          <button type="button" onmouseout="dataChange()" class="btn btn-warning btn-block btn-lg">move away</button>
+
+           <h2 id="h3">Lorem ipsum, dolor sit amet</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--on focus-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="focus">
+            <h1> 6. This example uses the HTML DOM to assign an "onfocus" event to an input element.</h1>
+
+            Enter your name: <input type="text" id="frname">
+
+          </div>
+        </div>
+      </div>
+    </div>
+<!--on input-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="input">
+            <h1> 7. This example uses the HTML DOM to assign an "oninput" event to an input element.</h1>
+
+            <h3>Write something in the text field to trigger a function.</h3>
+
+            Enter name: <input type="text" id="myInput" value="Mickey">
+          </div>
+        </div>
+      </div>
+    </div>
+<!--on reset-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="set">
+            <h1> 8. This example uses the HTML DOM to assign an "onreset" event to a form element.</h1>
+
+            <h4>When you reset the form, a function is triggered which outputs some text.</h4>
+
+            <form id="myForm">
+              Enter name: <input type="text">
+              <input type="reset">
+            </form>
+
+            <p id="pp"></p>
+        </div>
+      </div>
+    </div>
+<!--on scroll-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="down">
+            <h1> 9. This example uses the HTML DOM to assign an "onscroll" event to a div element.</h1>
+
+            <h4>Try the scrollbar in the div</h4>
+            <div id="myDIV">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+              <br><br>
+            'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+
+            <p id="trail"></p>
+
+        </div>
+      </div>
+    </div>
+<!--on get element tag name-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tag">
+            <h1> 10. get element tag name</h1>
+           <ul>
+            <li>Rose</li>
+            <li>Jasmin</li>
+            <li>Lily</li>
+            </ul>
+            <button onclick="tag_practice()">click here</button>
+            <p id="suma"></p>
+
+        </div>
+      </div>
+    </div>
+<!--on copy-->
+     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copy">
+            <h1>11. on copy</h1>
+            <p>This example uses the HTML DOM to assign an "oncopy" event to an input element.</p>
+
+            <input type="text" id="myInput" value="Try to copy this text">
+
+        </div>
+      </div>
+    </div>
+ <!--on error-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="error">
+            <h1> 12. on error</h1>
+            <p>This example uses the HTML DOM to assign an "onerror" event to an img element</p>
+
+            <img id="myImg" src="image.gif">
+
+            <p id="dm"></p>
+
+
+        </div>
+      </div>
+    </div>
+
+  <!--on keydown-->
+   <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="keydown">
+            <h1> 13. on keydown</h1>
+            <p>This example uses the HTML DOM to assign an "onkeydown" event to an input element.</p>
+
+            <p>Press a key inside the text field to set a red background color.</p>
+
+            <input type="text" id="key">
+
+
+
+        </div>
+      </div>
+    </div>
+
+ <!--on mousedown-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mousedown">
+            <h1> 14. on mousedown</h1>
+            <p>This example uses the HTML DOM to assign an "onmousedown" and "onmouseup" event to a p element.</p>
+
+            <p id="sample">Click me.</p>
+
+        </div>
+      </div>
+    </div>
+
+<!--on mouseenter-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mouseenter">
+            <h1> 15. on mouseenter and mouseup</h1>
+            <p>This example uses the HTML DOM to assign an "onmouseenter" and "onmouseleave" event to a h1 element.</p>
+
+            <h2 id="mySample">Mouse over me</h2>
+
+        </div>
+      </div>
+    </div>
+
+<!--on mouseenter-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="toggle">
+            <h1> 16. on toggle</h1>
+            <p>This example uses the HTML DOM to assign an "ontoggle" event to a details element.</p>
+
+            <p>Open the details.</p>
+
+            <details id="myDetails">
+              <summary>Copyright 1999-2014.</summary>
+              <p> - by Refsnes Data. All Rights Reserved.</p>
+              <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+            </details>
+
+        </div>
+      </div>
+    </div>
+
+<!--on select-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="select">
+            <h1> 17. on select</h1>
+            <p>This example uses the HTML DOM to assign an "onselect" event to an input element.</p>
+
+            Select some text: <input type="text" value="Hello world!" id="myText">
+
+            <p id="mySp"></p>
+
+        </div>
+      </div>
+    </div>
+
+<!--on cancelable-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cancelable">
+            <h1> 18. on cancelable</h1>
+            <p>Click the button to find out if the onclick event is a cancelable event.</p>
+
+            <button onclick="myCancelablef(event)">Try it</button>
+
+            <p id="myexmple"></p>
+
+        </div>
+      </div>
+    </div>
+
+<!--on code Property-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="Property">
+            <h1> 19. KeyboardEvent code Property</h1>
+
+            <p>Press a key on the keyboard in the input field:</p>
+
+            <input type="text" size="40" onkeypress="myCodef(event)">
+
+            <p>The code property returns the name of the key you pressed:</p>
+
+            <p id="example"></p>
+
+        </div>
+      </div>
+    </div>
+
+<!--on CTRL key-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ctrl">
+            <h1> 20. Click somewhere in the document. An alert box will tell you if the CTRL key was pressed when the onmousedown event occured.</h1>
+
+            <p><strong>Tip:</strong> Try to press and hold down the CTRL key (on your keyboard) before you click in the document.</p>
+
+        </div>
+      </div>
+    </div>
+
+  
+    <!-- JS links-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/script.js"></script>
+    <script>
+      function textChange (){
+        document.getElementById('h2').innerHTML= "Hello SSB"; 
+      } 
+    </script>
+    <script>
+      function displayDate() {
+        document.getElementById("p").innerHTML = Date();
+      }
+    </script>
+    <script>
+      document.getElementById("fname").onchange = function() {myFunction()};
+
+      function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+    <script>
+      function displayChange(){
+        document.getElementById('demo').innerHTML= "I am Samira"; 
+      } 
+    </script>
+    <script>
+      function dataChange(){
+        document.getElementById('h3').innerHTML= "Hello SSB"; 
+      } 
+    </script>
+    <script>
+      document.getElementById("frname").onfocus = function() {showFunction()};
+
+      function showFunction() {
+        document.getElementById("frname").style.backgroundColor = "red";
+      }
+    </script>
+    <script>
+      document.getElementById("myInput").oninput = function() {myFunction()};
+
+      function myFunction() {
+        alert("The value of the input field was changed.");
+      }
+    </script>
+    <script>
+      document.getElementById("myForm").onreset = function() {oneFunction()};
+
+      function oneFunction() {
+        document.getElementById("pp").innerHTML = "The form was reset";
+      }
+    </script>
+    <script>
+      document.getElementById("myDIV").onscroll = function() {dataFunction()};
+
+      function dataFunction() {
+        document.getElementById("trail").innerHTML = "You scrolled in div.";
+      }
+    </script>
+    <script>
+      function tag_practice(){
+        var x=document.getElementsByTagName("LI");
+        document.getElementById("suma").innerHTML=x[0].innerHTML;
+
+      }
+    </script>
+
+    <script>
+      document.getElementById("myInput").oncopy = function() {myCopyF()};
+
+      function myCopyF() {
+        alert("You copied text!");
+      }
+    </script>
+
+    <script>
+      document.getElementById("myImg").onerror = function() {myErrorf()};
+
+      function myErrorf() {
+        document.getElementById("dm").innerHTML = "The image could not be loaded.";
+      }
+    </script>
+
+    <script>
+      document.getElementById("key").onkeydown = function() {myKeydownf()};
+
+      function myKeydownf() {
+        document.getElementById("key").style.backgroundColor = "red";
+      }
+    </script>
+
+    <script>
+      document.getElementById("sample").onmousedown = function() {mouseDown()};
+      document.getElementById("sample").onmouseup = function() {mouseUp()};
+
+      function mouseDown() {
+        document.getElementById("sample").innerHTML = "The mouse button is held down.";
+      }
+
+      function mouseUp() {
+        document.getElementById("sample").innerHTML = "You released the mouse button.";
+      }
+    </script>
+
+    <script>
+      document.getElementById("mySample").onmouseenter = function() {mouseEnter()};
+      document.getElementById("mySample").onmouseleave = function() {mouseLeave()};
+
+      function mouseEnter() {
+        document.getElementById("mySample").style.color = "red";
+      }
+
+      function mouseLeave() {
+        document.getElementById("mySample").style.color = "black";
+      }
+    </script>
+
+    <script>
+      document.getElementById("myDetails").ontoggle = function() {myFunction()};
+
+      function myFunction() {
+        alert("The ontoggle event occured");
+      }
+    </script>
+
+    <script>
+      document.getElementById("myText").onselect = function() {mySelectf()};
+
+      function mySelectf() {
+        document.getElementById("mySp").innerHTML = "You selected some text!";
+      }
+    </script>
+
+    <script>
+      function myCancelablef(event) { 
+        var x = event.cancelable;
+        document.getElementById("myexmple").innerHTML = x;
+      }
+    </script>
+
+    <script>
+      function myCodef(event) {
+        var x = event.code;
+        document.getElementById("example").innerHTML = x;
+      }
+    </script>
+
+    <script>
+      function isKeyPressed(event) {
+        if (event.ctrlKey) {
+          alert("The CTRL key was pressed!");
+        } else {
+          alert("The CTRL key was NOT pressed!");
+        }
+      }
+    </script>
+
+  </body>
+</html>
